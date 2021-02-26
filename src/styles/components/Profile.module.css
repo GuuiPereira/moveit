@@ -1,0 +1,90 @@
+.profileContainer {
+    display: flex;
+    align-items: center;
+}
+
+.profileContainer > img {
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+}
+
+.profileContainer > div {
+    /*display: flex;
+    align-items: center;*/
+    margin-left: 1.5rem;
+}
+
+.profileContainer div strong {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--title);
+}
+
+.profileContainer div > span  {
+    position: relative;
+}
+
+.profileContainer div > span > img {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.profileContainer div > span > img:hover {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 1rem;
+}
+
+/*.profileContainer div > span > img:hover + .profileMedalsContent {
+    display: block;
+}*/
+
+.profileMedalsContent {
+
+    display: none;
+    flex-direction: column;
+    left: -120%;
+    position: absolute;
+    height: 300px;
+    width: 200px;
+    background:var(--white);
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.profileMedalsContent >div {
+
+    flex: 1;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:1rem;
+}
+
+.profileMedalsContent div >img {
+
+    width: 2.5rem;
+    height: 2.5rem;
+    opacity: 0.2;
+}
+
+.profileMedalsContent div >img.visible {
+
+    opacity: 1;
+}
+
+
+.profileContainer div p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+.profileContainer div p img {
+
+    margin-right: 0.5rem;
+ 
+}
